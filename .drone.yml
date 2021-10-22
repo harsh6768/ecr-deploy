@@ -9,7 +9,7 @@ steps:
       from_secret: aws_key
     secret_key:
       from_secret: aws_secret
-    repo: hypercall
+    repo: ecr-deploy
     registry: 677704793432.dkr.ecr.ap-south-1.amazonaws.com/hypercall
     region: ap-south-1
     dockerfile: docker/production.dockerfile
