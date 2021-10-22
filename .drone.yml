@@ -5,6 +5,10 @@ steps:
 - name: build and publish to ecr
   image: plugins/ecr
   settings:
+    access_key:
+      from_secret: aws_key
+    secret_key:
+      from_secret: aws_secret
     repo: hypercall
     registry: 677704793432.dkr.ecr.ap-south-1.amazonaws.com/hypercall
     region: ap-south-1
