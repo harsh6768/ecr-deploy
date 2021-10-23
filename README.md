@@ -4,7 +4,7 @@ Create a Nodejs service and RDS data and deploy it on EC2  as a Docker container
 
 DRONE.IO CI SETUP
 
-1. Create AWS EC2 Instance for run drone.io ci in ec2 
+1. Create AWS EC2 Instance to run drone.io ci in ec2 
 2. Create an OAuth app in github
    
    <img width="1438" alt="Screenshot 2021-10-23 at 3 52 30 PM" src="https://user-images.githubusercontent.com/25931598/138552403-577a0cd1-3070-415f-93f1-4a6836ea6b92.png">
