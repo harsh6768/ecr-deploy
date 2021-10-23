@@ -44,7 +44,7 @@ docker logs b872d3c9c181 --tail 100 -f
 1. docker stop container_id
 2. docker rm container_id
 
-TEST DEPLOYED SERVER APIS
+## TEST DEPLOYED SERVER APIS
 
 BASE_URL :  EC2_PUBLIC_IP:EXPOSED_PORT
 
