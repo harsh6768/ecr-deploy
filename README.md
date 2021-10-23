@@ -19,7 +19,7 @@ DRONE.IO CI SETUP
    
 3. Setup DRONE.IO CI in EC2 Instance 
 
-    VISIT ("https://docs.drone.io/server/provider/github/")[Drone.IO] Documentation to setup drone ci in EC2 instance
+    VISIT [Drone.IO Documentation]("https://docs.drone.io/server/provider/github/")to setup drone ci in EC2 instance
     
     
        docker run   --volume=/var/lib/drone:/data   
