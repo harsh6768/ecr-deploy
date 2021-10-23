@@ -1,6 +1,3 @@
-# ecr-deploy
-Create a Nodejs service and RDS data and deploy it on EC2  as a Docker container .  Add CI/CD and if any branch merge it to the master branch then push docker image to ECR and manage docker image.
-
 # Welcome to the ecr-deploy wiki!
 
 ## Build Docker Image 
@@ -47,6 +44,24 @@ docker logs b872d3c9c181 --tail 100 -f
 1. docker stop container_id
 2. docker rm container_id
 
+TEST DEPLOYED SERVER APIS
+
+BASE_URL :  EC2_PUBLIC_IP:EXPOSED_PORT
+
+Ex.  http://35.154.119.51:3000
+
+***
+
+BASE_API_URL : NODE_SERVER_API_URL
+
+Ex. /api/getAll
+
+***
+
+
+API_URL : BASE_URL + BASE_API_URL 
+
+Ex. http://35.154.119.51:3000/api/getAll
 
 
 ## DRONE.IO CI SETUP
