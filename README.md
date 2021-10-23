@@ -17,6 +17,24 @@ DRONE.IO CI SETUP
   >>> Replace PUBLIC_IP of EC2 INSTANCE in Homepage URL and Authorization Callback URL
    
    
+3. Setup DRONE.IO CI in EC2 Instance 
+
+    Drone Documentation (https://docs.drone.io/server/provider/github/)[https://docs.drone.io/server/provider/github/] for ec2 instance
+    
+    
+                docker run   --volume=/var/lib/drone:/data   
+                --env=DRONE_GITHUB_CLIENT_ID=GITHUB_CLIENT_ID 
+                --env=DRONE_GITHUB_CLIENT_SECRET=GITHUB_CLIENT_SECRET   
+                --env=DRONE_RPC_SECRET=GENERATED_RPC_SECRET   
+                --env=DRONE_SERVER_HOST=EC2_INSTANCE_PUBLIC_IP   
+                --env=DRONE_SERVER_PROTO=http   
+                --publish=80:80   
+                --publish=443:443   
+                --restart=always   
+                --detach=true   
+                --name=drone   
+                drone/drone:2
+   
    
 
 
