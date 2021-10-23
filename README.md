@@ -1,8 +1,55 @@
 # ecr-deploy
 Create a Nodejs service and RDS data and deploy it on EC2  as a Docker container .  Add CI/CD and if any branch merge it to the master branch then push docker image to ECR and manage docker image.
 
+# Welcome to the ecr-deploy wiki!
 
-DRONE.IO CI SETUP
+## Build Docker Image 
+
+docker build -t hypercall:v1 -f docker/production.dockerfile .
+
+1. -t    :::> indicate tag name (ex. hypercall:v1)
+2. -f    :::> provide path from which you wanna build the docker image
+***
+
+## Check List of Images in Docker 
+
+docker image ls -a
+
+
+## Run Docker image  as detached mode 
+
+docker run -d hypercall:v1 ::>> It is not exposing the port that we have mentioned in the dockerfile for build
+
+#### User this detached mode for running the docker image 
+
+docker run -d -p 3000:3000 hypercall:v1
+
+> port_of_server:port_which_exposed_from_docker
+ 
+
+1. -d   :::> indicated the detach mode 
+2. hypercall:v1   :::> image tag we have provided while building the docker image
+
+
+## Check Docker container 
+
+docker ps
+
+## Docker Logs 
+
+docker logs b872d3c9c181 --tail 100 -f
+
+1. b872d3c9c181  ::> container id 
+
+
+## Delete Any Container (If container is running you have to stop it first) 
+
+1. docker stop container_id
+2. docker rm container_id
+
+
+
+## DRONE.IO CI SETUP
 
 1. Create AWS EC2 Instance to run drone.io ci in ec2 
 2. Create an OAuth app in github
