@@ -64,7 +64,7 @@ API_URL : BASE_URL + BASE_API_URL
 Ex. http://35.154.119.51:3000/api/getAll
 
 
-## DRONE.IO CI SETUP
+## DRONE.IO CD SETUP
 
 1. Create AWS EC2 Instance to run drone.io ci in ec2 
 2. Create an OAuth app in github
@@ -97,7 +97,20 @@ Ex. http://35.154.119.51:3000/api/getAll
        --name=drone   
        drone/drone:2
    
-   
+ 
+
+## Install Jenkins for CI 
+
+### Install in mac
+
+Download it form https://www.jenkins.io/download/lts/macos/ here.
+
+then follow this blog to setup Jenkins in mac.
+
+https://www.macminivault.com/installing-jenkins-on-macos/
+
+
+
 
 
 
