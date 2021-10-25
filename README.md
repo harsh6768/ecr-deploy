@@ -103,7 +103,7 @@ Ex. http://35.154.119.51:3000/api/getAll
 
 ### Install in mac
 
-Download it form https://www.jenkins.io/download/lts/macos/ here.
+Download it from https://www.jenkins.io/download/lts/macos/ here.
 
 then follow this blog to setup Jenkins in mac.
 
