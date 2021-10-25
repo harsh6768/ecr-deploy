@@ -110,7 +110,4 @@ then follow this blog to setup Jenkins in mac.
 https://www.macminivault.com/installing-jenkins-on-macos/
 
 
-
-
-
-
+Jenkins always run in 8080 port :  http://localhost:8080/ 
